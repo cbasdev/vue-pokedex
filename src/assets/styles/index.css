@@ -56,23 +56,5 @@ p {
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 150%;
-  text-align: center;
-  color: #5e5e5e;
-}
-
-.main-btn {
-  color: #fff;
-  font-size: 18px;
-  background: var(--primary-red);
-  border-radius: 60px;
-  padding: 11px 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  transition: 0.3s;
-  font-weight: bold;
-}
-
-.main-btn:hover {
-  background: var(--secundary-red);
+  color: var(--secundary-gray);
 }

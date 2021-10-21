@@ -34,15 +34,6 @@ const ApiService = {
     })
   },
 
-  get(resource, slug = '') {
-    if (!slug) slug = ''
-    // console.error(resource, slug);
-    return Vue.axios
-      .get(`${resource}/${slug}`)
-      .then((result) => Promise.resolve(result.data))
-      .catch(this._handleError)
-  },
-
   download(resource, slug = '') {
     if (!slug) slug = ''
     return Vue.axios
@@ -58,6 +49,16 @@ const ApiService = {
       .then((result) => Promise.resolve(result.data))
       .catch(this._handleError)
   },
+
+  get(resource, slug = '') {
+    if (!slug) slug = ''
+    // console.error(resource, slug);
+    return Vue.axios
+      .get(`${resource}/${slug}`)
+      .then((result) => Promise.resolve(result.data))
+      .catch(this._handleError)
+  },
+
   postMultiPart(resource, params) {
     if (!params) params = {}
     return Vue.axios

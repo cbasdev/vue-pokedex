@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div v-if="step === 1">
+    <div v-if="step === 2">
       <app-welcome @changeStep="changeStep" />
     </div>
-    <div v-if="step === 2">
+    <div v-if="step === 1">
       <app-pokedex />
     </div>
   </div>

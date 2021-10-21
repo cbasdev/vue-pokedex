@@ -72,19 +72,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-input {
-  background: #ffffff;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.04);
-  border-radius: 5px;
-}
-input::placeholder {
-  color: #d2d0d0;
-  letter-spacing: -0.03rem;
-}
 .container-input {
+  box-shadow: 0px 2px 10px rgba(89, 86, 86, 0.04);
+  border-radius: 5px;
   display: flex;
   background: #fff;
-  padding: 0.3rem;
-  border-radius: 3rem;
+  width: 100%;
+  input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    z-index: 1;
+    background: transparent;
+    color: var(--primary-gray);
+  }
+  input::placeholder {
+    color: var(--tertiary-gray);
+  }
+
+  .container-icon {
+    position: absolute;
+    cursor: pointer;
+    min-height: 54px;
+    min-width: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

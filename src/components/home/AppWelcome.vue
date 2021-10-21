@@ -5,15 +5,15 @@
     </div>
     <h1 class="mt-10">Welcome to Pokédex</h1>
     <div class=" w-1/2 mt-8">
-      <p>
+      <p class="text-center">
         The digital encyclopedia created by Professor Oak is an invaluable tool
         to Trainers in the Pokémon world.
       </p>
     </div>
     <router-link to="/">
-      <button @click="$emit('changeStep', 2)" class="main-btn mt-10">
-        Get started
-      </button>
+      <div class="mt-10">
+        <app-button @click.native="$emit('changeStep', 2)" text="Get started" />
+      </div>
     </router-link>
   </div>
 </template>

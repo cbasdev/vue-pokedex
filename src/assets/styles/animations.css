@@ -1,0 +1,19 @@
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+}
+
+.pokeball-loader {
+  animation: swing 2s infinite ease-in-out;
+}
