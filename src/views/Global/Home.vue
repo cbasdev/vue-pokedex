@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div v-if="step === 2">
+    <div v-if="step === 1">
       <app-welcome @changeStep="changeStep" />
     </div>
-    <div v-if="step === 1">
-      <app-pokedex />
+    <div v-if="step === 2">
+      <app-pokedex @changeStep="changeStep" />
     </div>
   </div>
 </template>

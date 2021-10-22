@@ -31,7 +31,7 @@ export default {
   props: {
     type: { type: String, default: 'main-btn' },
     text: { type: String, default: '' },
-    icon: { type: String, required: false, default: false },
+    icon: { type: String, required: false },
     iconWidth: { type: String, required: false },
   },
 }

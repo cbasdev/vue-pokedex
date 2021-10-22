@@ -1,7 +1,12 @@
 <template>
-  <modal :width="width" :height="height" :name="name" ref="modal">
+  <modal
+    :width="isMobile ? '90%' : '600'"
+    height="auto"
+    :name="name"
+    ref="modal"
+  >
     <div class="btn-modal" @click="closeModal">
-      X
+      <img src="@/assets/icons/close-icon.png" width="26" />
     </div>
     <div class="container-modal">
       <slot></slot>
@@ -13,13 +18,9 @@
 export default {
   name: 'AppModal',
   props: {
-    width: { type: String, required: false, default: '600' },
-    height: { type: String, required: false, default: 'auto' },
     name: { type: String, required: true },
   },
-  data() {
-    return {}
-  },
+
   methods: {
     closeModal() {
       this.$modal.hide(this.name)
@@ -32,18 +33,24 @@ export default {
       this.$modal.hide(this.name)
     },
   },
+  computed: {
+    isMobile() {
+      return window.screen.width < 650
+    },
+  },
 }
 </script>
 
 <style>
 .vm--modal {
   overflow: initial !important;
-  border-radius: 0.8rem !important;
+  border-radius: 5px !important;
 }
 
 .btn-modal {
+  cursor: pointer;
   position: absolute;
-  right: 20px;
-  top: -14px;
+  right: 10px;
+  margin-top: 15px;
 }
 </style>
