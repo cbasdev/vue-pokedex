@@ -5,8 +5,10 @@
         <div class="container-img-pokemon">
           <div>
             <img
+              v-if="pokemonDetails.sprites.other.dream_world.front_default"
               :src="pokemonDetails.sprites.other.dream_world.front_default"
             />
+            <img v-else src="@/assets/img/default.png" />
           </div>
         </div>
       </div>
