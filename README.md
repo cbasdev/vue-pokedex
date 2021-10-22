@@ -45,9 +45,9 @@ yarn global add @vue/cli
 - **Axios:**
   I consider it to be the most used tool to make APIS requests easily, in addition to being incredibly easy to scale for a bridge architecture.
 - **Sass:**
-  I consider it to be the most used tool to make APIS requests easily, in addition to being incredibly easy to scale for a bridge architecture.
+  I use this css preprocessor due to the versatility and speed that allows me to create designs quickly and scalable..
 
-## Contribuciones 👥
+## Contributions 👥
 
 _Developed by:_ \
 _[Sebastian Velez Montoya](https://github.com/cbasdev)_
